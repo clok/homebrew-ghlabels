@@ -5,29 +5,29 @@
 class Ghlabels < Formula
   desc "Simple CLI tool to help manage labels across repos"
   homepage "https://clokwork.net/ghlabels/"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/clok/ghlabels/releases/download/v0.1.2/ghlabels_0.1.2_darwin_amd64.tar.gz"
-    sha256 "32141fd99f0749a0daa612b50ec973dcf1737407bc77bef147e0a04accd19c12"
+    url "https://github.com/clok/ghlabels/releases/download/v0.1.3/ghlabels_0.1.3_darwin_amd64.tar.gz"
+    sha256 "a6a4ce44b0c0fd7c740ceda629d2b067bb7ad30e42fa9bf8df71de9762388ae8"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clok/ghlabels/releases/download/v0.1.2/ghlabels_0.1.2_darwin_arm64.tar.gz"
-    sha256 "89b4ad18faf56634d6683471a5054aa484806de65cbb2b6c5445551450600e27"
+    url "https://github.com/clok/ghlabels/releases/download/v0.1.3/ghlabels_0.1.3_darwin_arm64.tar.gz"
+    sha256 "13d828a445a549611d9b870400536d9fd88a05ef1b31a99f45dacfc56e0f3660"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clok/ghlabels/releases/download/v0.1.2/ghlabels_0.1.2_linux_amd64.tar.gz"
-    sha256 "5b44de8f1e74d9d6e1d6b1b7005dee88a9b1398437f7937342ed40d19458cac6"
+    url "https://github.com/clok/ghlabels/releases/download/v0.1.3/ghlabels_0.1.3_linux_amd64.tar.gz"
+    sha256 "7133c3700a3b2f519b0a4101f232d0c31a0f37fa2d462debbe03b9b0a81ba7ac"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/clok/ghlabels/releases/download/v0.1.2/ghlabels_0.1.2_linux_armv6.tar.gz"
-    sha256 "77bfb66b1773fcbbe4ca7260d13f0fbfdb81918490866f3f106412983325cff2"
+    url "https://github.com/clok/ghlabels/releases/download/v0.1.3/ghlabels_0.1.3_linux_armv6.tar.gz"
+    sha256 "60e3fd6973907ebd7795654dc6790d76c48766059f01b760c0339ebc27aad972"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/clok/ghlabels/releases/download/v0.1.2/ghlabels_0.1.2_linux_arm64.tar.gz"
-    sha256 "6accff326bc84f59a6e27a731c525cbf79ff4675805dcbb30164a0e728bddd24"
+    url "https://github.com/clok/ghlabels/releases/download/v0.1.3/ghlabels_0.1.3_linux_arm64.tar.gz"
+    sha256 "c9538d84a8433ccb58a25c60f8ff1a796236430f85f41ebc93f3ce567e8bd19b"
   end
 
   def install
